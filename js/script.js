@@ -5,8 +5,8 @@ $(function () {
     range: "min",
     value: 300000,
     step: 5000,
-    min: 5000,
-    max: 1000000,
+    min: 10000,
+    max: 15000000,
     slide: function (event, ui) {
       var uiStr = ui.value.toString();
       $("#sum").val(uiStr.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + " ") + " руб.");
@@ -20,7 +20,7 @@ $( function() {
      range: "min",
      value: 9,
      min: 1,
-     max: 18,
+     max: 60,
      slide: function( event, ui ) {
        $( "#term" ).val(ui.value + " месяцев" );
      }

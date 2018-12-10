@@ -326,7 +326,7 @@ img {
   margin-right: 1px; }
 
 .conditions__form-item--view select {
-  padding: 8px 20px 9px 8px;
+  padding: 8px 32px 9px 8px;
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -634,7 +634,7 @@ img {
     margin-left: -4px; }
   .issue__item {
     margin-bottom: 36px;
-    max-width: 457px; }
+    max-width: 465px; }
     .issue__item--requirements {
       width: 352px; }
   .issue__promo {
