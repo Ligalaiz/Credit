@@ -147,7 +147,7 @@ img {
     letter-spacing: 0.6px;
     color: #2d2d2d;
     cursor: pointer; }
-  .header__text {
+  .header__text a {
     color: #5cc4cc;
     font-size: 12px;
     line-height: 1.5; }
@@ -1015,3 +1015,77 @@ img {
   .main-footer .container {
     padding-top: 25px;
     padding-bottom: 25px; } }
+
+.popup {
+  width: 500px;
+  height: 250px;
+  padding: 30px;
+  text-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
+  display: none; }
+  .popup__title {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .popup__field-tel {
+    width: 130px;
+    border: none;
+    border-bottom: 4px solid #5cc4cc;
+    padding-bottom: 5px;
+    font-weight: 400; }
+  .popup__phone label {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 10px; }
+  .popup__btn {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 18px;
+    background-color: #5cc4cc;
+    padding: 11px 30px 10px 30px;
+    -webkit-transform: translateY(87%);
+    -ms-transform: translateY(87%);
+    transform: translateY(87%);
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .popup__btn:hover {
+      -webkit-box-shadow: inset 0 -2px 5px 0 #136c72;
+      box-shadow: inset 0 -2px 5px 0 #136c72; }
+    .popup__btn:active {
+      -webkit-box-shadow: inset 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 -2px 5px 0 rgba(0, 0, 0, 0.3);
+      background-color: #136c72;
+      color: #ffffff; }
+  .popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #5cc4cc; }
+    .popup__close::after, .popup__close::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 15px;
+      width: 20px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #ffffff; }
+    .popup__close::after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .popup__close::before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }

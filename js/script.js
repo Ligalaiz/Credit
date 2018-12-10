@@ -73,3 +73,34 @@ $("form").submit(function () { // перехватываем все при со�
   }
   return false; // вырубаем стандартную отправку формы
 });
+
+$(function () {
+  $('[data-fancybox]').fancybox({
+    smallBtn: "false",
+    buttons: [
+      "close"
+    ],
+    touch: {
+      vertical: false,
+      momentum: false
+    }
+  });
+});
+
+$(function () {
+  $(document).ready(function () {
+    $(".modalbox").fancybox();
+    $("#p_contact").submit(function () {
+      return false;
+    });
+    $("#p_send").on("click", function () {
+
+      // тут дальнейшие действия по обработке формы
+      // закрываем окно, как правило делать это нужно после обработки данных
+      $("#p_contact").fadeOut("fast", function () {
+        $(this).before("<p><strong>Ваше сообщение отправлено!</strong></p>");
+        setTimeout("$.fancybox.close()", 1000);
+      });
+    });
+  });
+});

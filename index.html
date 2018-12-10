@@ -15,8 +15,9 @@
     <!-- Bootstrap grid CSS -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 
-    <!-- My CSS -->
+    <!-- My CSS --> 
     <link rel="stylesheet" href="css/libs/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -32,7 +33,7 @@
             <div class="col-md-auto">
               <div class="header__contacts">
                 <a class="header__tel" href="tel:+79063220009 ">+7 906 322-00-09 </a>
-                <p class="header__text">заказать бесплатную консультацию</p>
+                <p class="header__text"><a href="#popup" rel="nofollow" class="modalbox">заказать бесплатную консультацию</a></p>
               </div>
             </div>
           </div>
@@ -229,12 +230,24 @@
         <!-- /.container -->
       </footer>
     </div>
+    <article class="popup" id="popup">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <form class="popup__form" id="p_contact" method="post">
+        <div class="popup__phone">
+          <label for="phone">Ваш телефон:</label>
+          <input class="popup__field-tel" type="text" id="phone" name="phone" placeholder="+7 ___ ___ __-__">
+        </div>
+        <button class="btn  popup__btn" id="p_send"type="submit">Заказать</button>
+        <a href="javascript:;" onclick="$.fancybox.close();" class="popup__close"></a>
+      </form>
+    </article>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="js/libs-js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/libs-js/jquery-ui.min.js"></script>
     <script src="js/libs-js/jquery-gui.min.js"></script>
+    <script src="js/libs-js/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
