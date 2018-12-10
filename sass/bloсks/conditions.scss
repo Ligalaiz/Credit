@@ -180,26 +180,30 @@
   background-color: none;
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-  width: 11px;
-  height: 11px;
+.ui-slider-horizontal .ui-slider-handle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: none;
+  background-color: transparent;
+  top: -0.8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 0.55em;
+  left: 0.55em;
   background-color: $handle-after-bg;
+  border-radius: 50%;
 }
 
 .ui-slider-horizontal {
   height: 4px;
   border-radius: 0;
-}
-
-.ui-slider-horizontal .ui-slider-handle {
-  top: -0.2em;
 }
 
 .ui-widget.ui-widget-content {
