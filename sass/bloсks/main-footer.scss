@@ -1,0 +1,111 @@
+.main-footer {
+  background-color: $footer-bg;
+
+  & .container {
+    padding: 41px 0 48px 0;
+  }
+
+  &__logo {
+    width: 303px;
+    height: 54px;
+    margin-right: 13px;
+  }
+
+  &__promo {
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 143px;
+    display: inline-block;
+    transform: translateY(33%);
+    vertical-align: top;
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -56%;
+      width: 1px;
+      height: 73px;
+      background-color: $line-bg;
+    }
+  }
+
+  &__contacts {
+    position: relative;
+    padding-left: 45px;
+    text-align: right;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 37px;
+      height: 37px;
+      background-image: url("../img/call.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__tel {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    color: $color;
+    cursor: pointer;
+  }
+
+  &__text {
+    color: $color-green;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 536px) {
+
+  .main-footer .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .main-footer__logo-row {
+    margin-bottom: 15px;
+  }
+
+  .main-footer__logo {
+    width: 200px;
+    height: 36px;
+  }
+
+  .main-footer__tel {
+    font-size: 18px;
+  }
+
+  .main-footer__text {
+    font-size: 9px;
+  }
+
+  .main-footer__contacts::before {
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .main-footer__contacts {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 537px) and (max-width: 768px) {
+  .main-footer .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

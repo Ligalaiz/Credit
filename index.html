@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Вам кредит</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap grid CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/libs/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row  justify-content-center  align-items-center  justify-content-lg-between  align-items-center  header__row">
+            <div class="col-md-auto  header__promo-row">
+              <img class="header__logo" src="img/header-log.png" alt="Вам кредит" width="303" height="54">
+              <p class="header__promo">Деньги под расписку в Челнах и Татарстане</p>
+            </div>
+            <div class="col-md-auto">
+              <div class="header__contacts">
+                <a class="header__tel" href="tel:+79063220009 ">+7 906 322-00-09 </a>
+                <p class="header__text">заказать бесплатную консультацию</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Условия получения кредита</h1>
+        <section class="conditions">
+          <div class="container">
+            <h2 class="conditions__title">Деньги  под  расписку от  частного  инвестора</h2>
+            <p class="conditions__text">От 5 000 до 50 000 000 руб. без справок и поручителей! От 10% ставка кредита! Рассмотрение в течении 5 минут! Работаем со всеми!</p>
+            <form class="conditions__form" method="post">
+              <div class="row  justify-content-between  justify-content-md-around  justify-content-lg-between">
+                <div class="col-md-auto  conditions__form-item   conditions__form-item--view">
+                  <label class="conditions__select-arrow" for="view">Вид</label>
+                  <select name="view" id="view">
+                    <option selected="selected">Ипотечный кредит</option>
+                    <option>Ипотечный кредит2</option>
+                    <option>Ипотечный кредит3</option>
+                    <option>Ипотечный кредит4</option>
+                  </select>
+                </div>
+                <div class="col-md-auto  conditions__form-item  conditions__form-item--sum">
+                  <label for="sum">Сумма</label>
+                  <div class="conditions__form-field">
+                    <input type="text" id="sum" name="sum">
+                    <div class="slider-range-max" id="slider-range-max"></div>
+                  </div>
+                </div>
+                <div class="col-md-auto  conditions__form-item  conditions__form-item--term">
+                  <label for="term">Срок</label>
+                  <div class="conditions__form-field">
+                    <input type="text" id="term" name="term">
+                    <div id="slider-range-min"></div>
+                  </div>
+                </div>
+                <div class="col-md-auto  conditions__form-item  conditions__form-item--phone">
+                  <label for="phone">Ваш телефон</label>
+                  <input class="phone" type="text" id="phone" name="phone" placeholder="+7 ___ ___ __-__">
+                </div>
+                <div class="col-md-auto  conditions__form-item  conditions__form-item--btn">
+                  <button type="submit" name="button">Получить деньги</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="algorithm">
+          <div class="container">
+            <h2 class="algorithm__title  heading-style">Как мы работаем?</h2>
+            <div class="row  justify-content-between  algorithm__row">
+              <div class="col-md-auto  algorithm__item  algorithm__item--profile">
+                <p class="algorithm__text  algorithm__text--profile">Вы заполняете анкету</p>
+              </div>
+              <div class="col-md-auto  algorithm__item  algorithm__item--offers">
+                <p class="algorithm__text  algorithm__text--offers">Мы подбираем для Вас лучшие предложения</p>
+              </div>
+              <div class="col-md-auto  algorithm__item  algorithm__item--option">
+                <p class="algorithm__text  algorithm__text--option">Вы выбираете из поступивших лучшее для себя</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="issue">
+          <div class="container">
+            <h2 class="issue__title  heading-style">Условия выдачи денег</h2>
+            <div class="row  justify-content-between  justify-content-md-around  justify-content-xl-between">
+              <div class="col-md-auto">
+                <div class="issue__item  issue__item--conditions">
+                  <h3 class="issue__promo">Основные условия</h3>
+                  <p class="issue__text">Сумма от 1000 руб. до 50 000 000 руб.</p>
+                  <p class="issue__text">Годовая процентная ставка от 10%</p>
+                  <p class="issue__text">Срок кредита - от 3 до 60 месяцев</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div class="issue__item  issue__item--requirements">
+                  <h3 class="issue__promo">Требования к заемщику</h3>
+                  <p class="issue__text">Гражданство - РФ</p>
+                  <p class="issue__text">Возраст от 18 до 75 лет</p>
+                  <p class="issue__text">Стаж работы - не важен</p>
+                </div>
+              </div>
+            </div>
+            <p class="issue__text  issue__text--last"><span class="issue__text--bold">Деньги выдаются под залог:</span> ПТС, автомобиля, недвижимости, авто-, мототехники и&nbsp;др.</p>
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="advantage">
+          <div class="container">
+            <h2 class="advantage__promo  heading-style">Деньги выдаются даже если у Вас</h2>
+            <div class="row  justify-content-center  justify-content-md-around  justify-content-xl-between  advantage__first">
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--salary">Маленькая зарплата</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--story">Плохая кредитная история</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--experience">Нет стажа работы</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--informal">Неофициальная работа</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--credit">Есть кредиты</p>
+              </div>
+            </div>
+            <!-- /.row -->
+            <h2 class="advantage__promo  heading-style">Выдаем деньги на любые цели</h2>
+            <div class="row  justify-content-center  justify-content-md-around  justify-content-xl-between  advantage__second">
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--close">Закрыть кредит</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--mortgage">Ипотека</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--car">На покупку авто</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--informal-w">Неофициальная работа</p>
+              </div>
+              <div class="col-auto  col-md-auto  advantage__item">
+                <p class="advantage__text  advantage__text--rest">Все остальное</p>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <h2 class="feedback__promo  heading-style">Отзывы наших клиентов</h2>
+            <div class="row  justify-content-between">
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--first">
+                  <p class="feedback__name"><b>Дмитрий</b></p>
+                  <p class="feedback__text">&laquo;Обращался в &laquo;Вам кредит&raquo; несколько раз. Очень доволен оперативностью оформления займа. При первом обращении получил деньги на следующий день после подачи заявки, во все последующие - уже в тот же день.&raquo;</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--second">
+                  <p class="feedback__name"><b>Алексей</b></p>
+                  <p class="feedback__text">&laquo;Обращался  в &laquo;Вам кредит&raquo; несколько недель  назад. Понравился короткий срок займа и пересчет по дням. Пользовался деньгами 5 дней - ровно за 5 дней и заплатил проценты.&raquo;</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--fhird">
+                  <p class="feedback__name"><b>Роман</b></p>
+                  <p class="feedback__text">&laquo;Иногда бывают ситуации, когда  поставщик доставил крупную партию товара, а на оплату  не хватает средств. &laquo;Вам кредит&raquo;  всегда  выручает  в  таких  ситуациях.  Выгодная  процентная  ставка  позволяет в  результате остаться в прибыли.&raquo;</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--fourth">
+                  <p class="feedback__name"><b>Светлана</b></p>
+                  <p class="feedback__text">&laquo;Редко пользуюсь займами, но недавно срочно понадобилась довольно крупная сумма. Обратилась  в &laquo;Вам кредит&raquo;. Получила деньги за один день.&raquo;</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--fifth">
+                  <p class="feedback__name"><b>Александр</b></p>
+                  <p class="feedback__text">Так получилось, что срочно понадобились деньги на лечение. Оставлять в качестве залога авто для меня - не вариант, машина нужна, чтобы ездить на это лечение. Обратился в "Вам кредит" и несколько других подобных организаций. "Вам кредит" предложил лучшие для меня условия. Закрывая займ, даже порадовался, что совсем мало процентов набежало.</p>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <div  class="feedback__item  feedback__item--sixth">
+                  <p class="feedback__name"><b>Татьяна</b></p>
+                  <p class="feedback__text">Решили купить в подарок на свадьбу сыну хорошую бытовую технику. В магазине в рассрочке или кредите отказали, потому что у меня немного подпорченная кредитная история. Обратились в "Вам кредит", одобрили на удивление быстро. Уже на следующий день получили деньги, а ещё через день подарок был доставлен молодой семье. Что радует, в этой организации можно взять кредит на любой удобный срок, в банке (даже если бы одобрили) вряд ли бы согласились на срок 10 месяцев.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+      </main>
+      <!-- / main -->
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row  justify-content-center  justify-content-md-between  align-items-center">
+            <div class="col-auto  main-footer__logo-row">
+              <img class="main-footer__logo" src="img/header-log.png" alt="Вам кредит" width="303" height="54">
+            </div>
+            <div class="col-auto">
+              <div class="main-footer__contacts">
+                <a class="main-footer__tel" href="tel:+79063220009 ">+7 906 322-00-09 </a>
+                <p class="main-footer__text">заказать бесплатную консультацию</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </footer>
+    </div>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="js/libs-js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/libs-js/jquery-ui.min.js"></script>
+    <script src="js/libs-js/jquery-gui.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

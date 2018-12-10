@@ -1,0 +1,221 @@
+.advantage {
+
+  &__first {
+    margin-bottom: 2px;
+  }
+
+  &__second .advantage__item {
+    margin-bottom: 75px;
+  }
+
+  & .container {
+    padding-left: 30px;
+    padding-right: 27px;
+  }
+
+  &__promo {
+    margin-bottom: 29px;
+    margin-left: 8px;
+  }
+
+  &__item {
+    margin-bottom: 76px;
+  }
+
+  &__text {
+    position: relative;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 110px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--salary::before {
+      background-image: url("../img/salary.png");
+    }
+
+    &--story::before {
+      background-image: url("../img/story.png");
+    }
+
+    &--experience::before {
+      background-image: url("../img/experience.png");
+    }
+
+    &--informal::before {
+      background-image: url("../img/informal.png");
+    }
+
+    &--credit::before {
+      background-image: url("../img/credit.png");
+    }
+
+    &--close::before {
+      background-image: url("../img/close.png");
+    }
+
+    &--close {
+      width: 177px;
+    }
+
+    &--mortgage::before {
+      background-image: url("../img/mortgage.png");
+    }
+
+    &--mortgage {
+      width: 228px;
+    }
+
+    &--car::before {
+      background-image: url("../img/car.png");
+    }
+
+    &--car {
+      width: 153px;
+    }
+
+    &--informal-w::before {
+      background-image: url("../img/informal-w.png");
+    }
+
+    &--rest::before {
+      background-image: url("../img/rest.png");
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 536px) {
+
+  .advantage {
+
+    & .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: none;
+    }
+
+    &__text {
+      width: 100px;
+      padding-top: 65px;
+      font-size: 14px;
+
+      &::before {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    & .advantage__item {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 120px;
+    }
+
+    &__first {
+      margin-bottom: 15px;
+    }
+
+    &__second {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: 537px) and (max-width: 768px) {
+
+  .advantage {
+
+    & .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: none;
+    }
+
+    &__text {
+      width: 100px;
+      padding-top: 65px;
+      font-size: 14px;
+
+      &::before {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    & .advantage__item {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 120px;
+    }
+
+    &__first {
+      margin-bottom: 15px;
+    }
+
+    &__second {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .advantage {
+
+    & .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      max-width: none;
+    }
+
+    &__text {
+      width: 110px;
+      padding-top: 95px;
+      font-size: 16px;
+
+      &::before {
+        background-size: 70px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &__item {
+      margin-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__first {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .advantage {
+    &__text {
+      width: 140px;
+
+      &::before {
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+:-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder,
+::placeholder {
+  color: $color;
+}
+
+.wrapper {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $color;
+  font-weight: 400;
+  overflow-X: hidden;
+}
+
+:-moz-input:focus,
+:-ms-input:focus,
+::-webkit-input:focus,
+input:focus {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.heading-style {
+  color: $color-green;
+  font-size: 48px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 536px) {
+  .heading-style {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 537px) and (max-width: 768px) {
+  .heading-style {
+    font-size: 30px;
+  }
+}

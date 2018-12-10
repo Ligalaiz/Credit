@@ -1,0 +1,347 @@
+.conditions .container {
+  position: relative;
+  padding-top: 184px;
+  margin-bottom: 92px;
+  background-image: url("../img/conditions-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.conditions {
+
+  &__title {
+    color: $color-green;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 54px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-shadow: 0 3px 5px $text-shadow;
+    max-width: 756px;
+    text-align: center;
+    letter-spacing: -1.4px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    max-width: 598px;
+    color: $white;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.45px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    padding: 18px 40px 21px 44px;
+    background-color: $text-bg;
+  }
+
+  &__form {
+    position: relative;
+    max-width: 1051px;
+    margin: 0 auto;
+    padding: 14px 25px 16px;
+    background-color: $color-green;
+    bottom: -41px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 41px;
+
+    }
+
+    &::before {
+      bottom: 0;
+      border: 41px solid transparent;
+      border-top: 0 solid $handle-after-bg;
+      border-right: 27px solid $handle-after-bg;
+      left: -68px;
+    }
+
+    &::after {
+      bottom: 0;
+      border: 41px solid transparent;
+      border-top: 0 solid $handle-after-bg;
+      border-left: 28px solid $handle-after-bg;
+      right: -69px;
+    }
+  }
+
+  &__form .row {
+    padding: 0;
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &__form-item {
+    width: 187px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__form-item label {
+    color: $white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  &__form-item select,
+  &__form-item input {
+    font-size: 14px;
+    border: none;
+    width: 100%;
+  }
+
+  &__form-item--view {
+    margin-right: 1px;
+  }
+
+  &__form-item--view select {
+    padding: 8px 20px 9px 8px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  & select {
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }
+
+  &__form-field {
+    background-color: $white;
+    padding: 0 5px 8px;
+  }
+
+  &__form-field input {
+    padding: 9px 0 14px;
+    text-align: center;
+  }
+
+  &__form-item--phone input {
+    text-align: left;
+    padding: 10px 0 9px 12px;
+  }
+
+  &__form-item--btn button {
+    color: $color-green;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", "Arial", sans-serif;
+    border: none;
+    border-radius: 18px;
+    background-color: $white;
+    padding: 11px 30px 10px 30px;
+    transform: translateY(87%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      box-shadow: inset 0 -2px 5px 0 $color-green;
+    }
+
+    &:active {
+      box-shadow: inset 0 -2px 5px 0 $color-green;
+      background-color: $head-shadow;
+      color: $white;
+    }
+  }
+}
+
+:-ms-lang(x),
+.conditions__title {
+  max-width: 765px;
+}
+
+.ui-widget-content {
+  background-color: $range-after-bg;
+}
+
+.ui-widget-header {
+  background-color: $color-green;
+  border-radius: 0;
+}
+
+.ui-widget.ui-widget-content {
+  background-color: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  background-color: $handle-after-bg;
+}
+
+.ui-slider-horizontal {
+  height: 4px;
+  border-radius: 0;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -0.2em;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+@media (min-width: 320px) and (max-width: 536px) {
+
+  .conditions { 
+
+    & .container {
+      background-position: -500px;
+      padding-top: 154px;
+    }
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+      padding: 18px 15px 19px 15px;
+    }
+
+    &__form {
+      min-height: 440px;
+      text-align: center;
+
+      &::before,
+      &__form::after {
+        display: none;
+      }
+    }
+
+    &__form-item {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &--phone input {
+        text-align: center;
+      }
+    }
+    & select {
+      text-align-last: center;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 537px) and (max-width: 768px) {
+
+  .conditions {
+    margin-bottom: 100px;
+ 
+
+    & .container {
+      background-size: unset;
+      background-position: -150px 0;
+      max-width: none;
+    }
+
+    &__form {
+      text-align: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__form-item {
+      width: 100%;
+      margin-bottom: 15px;
+
+      &--btn {
+        width: 100%;
+      }
+
+      &--btn button {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      &--phone input {
+        text-align: center;
+      }
+    }
+
+    & select {
+      text-align-last: center;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .conditions { 
+
+    & .container {
+      max-width: none;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    &__form {
+      text-align: center;
+    }
+
+    &__form-item {
+      margin-bottom: 15px;
+
+      &--btn button {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 993px) and (max-width: 1230px) {
+
+  .conditions {
+
+    & .container {
+      max-width: none;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    &__form-item--btn {
+      width: 100%;
+      text-align: center;
+
+      & button {
+         margin-bottom: 30px;
+      }
+    }
+  }
+}
