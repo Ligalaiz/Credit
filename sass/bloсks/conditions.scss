@@ -1,7 +1,7 @@
 .conditions .container {
   position: relative;
-  padding-top: 184px;
-  margin-bottom: 92px;
+  padding-top: 182px;
+  margin-bottom: 93px;
   background-image: url("../img/conditions-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,6 +11,8 @@
 .conditions {
 
   &__title {
+    position: relative;
+    top: 4px;
     color: $color-green;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 54px;
@@ -21,10 +23,13 @@
     text-align: center;
     letter-spacing: -1.4px;
     margin: 0 auto;
-    margin-bottom: 11px;
+    margin-top: 3px;
+    margin-bottom: 7px;
   }
 
   &__text {
+    position: relative;
+    top: 4px;
     max-width: 598px;
     color: $white;
     font-size: 18px;
@@ -32,18 +37,17 @@
     letter-spacing: 0.45px;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 18px;
-    padding: 18px 40px 21px 44px;
+    padding: 18px 40px 20px 44px;
     background-color: $text-bg;
   }
 
   &__form {
     position: relative;
-    max-width: 1051px;
+    max-width: 1087px;
     margin: 0 auto;
-    padding: 14px 25px 16px;
+    padding: 17px 35px 18px 34px;
     background-color: $color-green;
-    bottom: -41px;
+    bottom: -55px;
 
     &::before,
     &::after {
@@ -56,32 +60,36 @@
 
     &::before {
       bottom: 0;
-      border: 41px solid transparent;
+      border: 55px solid transparent;
       border-top: 0 solid $handle-after-bg;
       border-right: 27px solid $handle-after-bg;
-      left: -68px;
+      left: -81px;
     }
 
     &::after {
       bottom: 0;
-      border: 41px solid transparent;
+      border: 55px solid transparent;
       border-top: 0 solid $handle-after-bg;
       border-left: 28px solid $handle-after-bg;
-      right: -69px;
+      right: -83px;
     }
   }
 
   &__form .row {
+    margin: 0;
     padding: 0;
     border: none;
-    margin-right: 0;
-    margin-left: 0;
+    width: 100%;
   }
 
   &__form-item {
-    width: 187px;
     padding-right: 0;
     padding-left: 0;
+    max-width: 187px;
+
+    &--view {
+      max-width: 205px;
+    }
   }
 
   &__form-item label {
@@ -91,50 +99,26 @@
     display: block;
   }
 
-  &__form-item select,
   &__form-item input {
     font-size: 14px;
     border: none;
     width: 100%;
   }
 
-  &__form-item--view {
-    margin-right: 1px;
-  }
-
-  &__form-item--view select {
-    padding: 8px 32px 9px 8px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-
-    &:focus {
-      border: none;
-      outline: none;
-      box-shadow: none;
-    }
-  }
-
-  & select {
-    background-image: url("../img/arrow.png");
-    background-repeat: no-repeat;
-    background-position: 95% center;
-  }
-
   &__form-field {
+    width: 187px;
+    padding: 0 7px 19px;
     background-color: $white;
-    padding: 0 5px 8px;
   }
 
   &__form-field input {
-    padding: 9px 0 14px;
+    padding: 12px 0 16px;
     text-align: center;
   }
 
   &__form-item--phone input {
     text-align: left;
-    padding: 10px 0 9px 12px;
+    padding: 25px 0 26px 12px;
   }
 
   &__form-item--btn button {
@@ -146,7 +130,7 @@
     border-radius: 18px;
     background-color: $white;
     padding: 11px 30px 10px 30px;
-    transform: translateY(87%);
+    transform: translateY(114%);
     cursor: pointer;
     transition: all 0.2s ease;
 
@@ -160,6 +144,33 @@
       color: $white;
     }
   }
+}
+
+.jq-selectbox {
+  padding: 10px 20px 12px 13px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-color: $white;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 94% 15px;
+  height: 68px;
+  font-size: 14px;
+  line-height: 1.1;
+  border: none;
+  width: 203px;
+  
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.jq-selectbox__select-text {
+   white-space: normal;
 }
 
 :-ms-lang(x),
@@ -231,25 +242,41 @@
     &__form {
       min-height: 440px;
       text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
 
       &::before,
-      &__form::after {
+      &::after {
         display: none;
       }
+    }
+
+    &__form-field {
+      width: 100%;
     }
 
     &__form-item {
       width: 100%;
       margin-bottom: 10px;
+      max-width: 100%;
 
       &--phone input {
         text-align: center;
       }
+
+      &--btn button {
+        transform: translateY(34%);
+      }
     }
+
     & select {
       text-align-last: center;
       text-align: center;
     }
+  }
+
+  .jq-selectbox { 
+    width: 100%;
   }
 }
 
@@ -274,25 +301,34 @@
       }
     }
 
+    &__form-field {
+      width: 203px;
+    }
+
     &__title {
       font-size: 32px;
     }
 
     &__form-item {
-      width: 100%;
+      width: 203px;
+      max-width: 203px;
+      margin-right: 10px;
       margin-bottom: 15px;
 
       &--btn {
         width: 100%;
+        margin: 0 auto;
       }
 
       &--btn button {
         display: inline-block;
-        margin-bottom: 20px;
+        transform: translateY(24%);        
       }
 
       &--phone input {
         text-align: center;
+        width: 203px;
+        padding-left: 0;
       }
     }
 
@@ -300,6 +336,22 @@
       text-align-last: center;
       text-align: center;
     }
+  }
+
+  .jq-selectbox {
+    background-position: 94% 45px;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 768px) {
+  .conditions__form-item--btn button {
+    transform: translateY(114%);
+  }
+}
+
+@media (min-width: 738px) and (max-width: 768px) {
+  .conditions__form-item--btn {
+    margin: 0;
   }
 }
 
@@ -317,12 +369,26 @@
       text-align: center;
     }
 
+    &__form-field {
+      width: 203px;
+    }
+
     &__form-item {
       margin-bottom: 15px;
+      margin-right: 10px;
+      width: 203px;
+      max-width: 203px;
 
       &--btn button {
         display: inline-block;
         margin-bottom: 20px;
+        width: 203px;
+      }
+
+      &--phone input {
+        text-align: center;
+        width: 203px;
+        padding-left: 0;
       }
     }
   }
@@ -339,12 +405,24 @@
       padding-right: 28px;
     }
 
-    &__form-item--btn {
-      width: 100%;
+    &__form-item {
+      margin-bottom: 15px;
+      margin-right: 10px;
+      width: 203px;
+      max-width: 203px;
       text-align: center;
 
-      & button {
-         margin-bottom: 30px;
+      &--btn button {
+        margin-bottom: 30px;
+        max-width: 203px;
+        width: 203px;
+      }
+
+      &--phone input {
+        text-align: center;
+        width: 203px;
+        max-width: 203px;
+        padding-left: 0;
       }
     }
   }

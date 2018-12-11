@@ -104,3 +104,11 @@ $(function () {
     });
   });
 });
+
+(function ($) {
+  $(function () {
+
+    $('.styler').styler();
+
+  });
+})(jQuery);
